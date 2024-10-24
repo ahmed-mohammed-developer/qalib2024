@@ -1,5 +1,114 @@
 .home {
-    margin-top: 100px;
-    padding-top: 50px;
-    margin-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #f5f7fa, #fff);
+
+}
+.section-title h2 {
+    text-align: center;
+    font-weight: 900;
+    font-family: "Tajawal", sans-serif;
+    font-size: 30px;
+    color: #121f3e;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+.rowhome {
+    margin-inline: auto;
+}
+.col-lg-4 a {
+    text-decoration: none;
+}
+.cardlastprojict {
+    margin-inline: 2.5px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
+    padding: 16px;
+
+}
+.cardlastprojict img {
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* تأثير الانتقال */
+}
+.cardlastprojict img:hover {
+    filter: blur(2px); /* تعتيم الصورة */
+}
+.latestworks-body .latestworks-h5{
+    color: #121f3e;
+    font-size: 20px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+.latestworks-body .latestworks-p {
+    color: #96a0b5;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2; /* عدد الأسطر التي تريد عرضها */
+}
+
+.card  ul {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+.card  ul li {
+    list-style:none;
+}
+.card  ul li a {
+    display:block;
+    color:#aaa;
+    margin:0 10px;
+    font-size:20px;
+    transition:0.5s;
+    text-align:center;
+}
+.card  ul li:hover a {
+    color:#223b40;
+    transform:rotateY(360deg);
+}
+.input-section {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-inline: auto;
+}
+.input-section input {
+    width: 80%;
+    color: #2d2f31;
+    height: 38px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+}
+.coloricon{
+    color: #223b40;
+    cursor: pointer;
+}
+@media (width < 500px) {
+    .home {
+      padding-block: 80px;
+      /*background-color: #f5f7fa;*/
+  }
 }
