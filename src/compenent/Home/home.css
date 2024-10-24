@@ -37,24 +37,25 @@
     filter: blur(2px); /* تعتيم الصورة */
 }
 .latestworks-body .latestworks-h5{
-    color: #121f3e;
+    color: #223b40;
     font-size: 20px;
     font-family: "Tajawal", sans-serif;
-    font-weight: 800;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-bottom: 5px;
+    margin-top: 5px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 1;
 }
 .latestworks-body .latestworks-p {
-    color: #96a0b5;
+    color: #555;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 300;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -94,7 +95,7 @@
     margin-inline: auto;
 }
 .input-section input {
-    width: 80%;
+    width: 100%;
     color: #2d2f31;
     height: 38px;
     border: none;

@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -46,6 +48,7 @@ const Home = () => {
             <h2>جميع القوالب</h2>
           </div>
           <div className="row rowhome">
+          <Fade top>
             {filteredItems
               .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
               .map((item, index) => ( // استخدام .map() مباشرة بعد الترتيب
@@ -66,6 +69,7 @@ const Home = () => {
                   </div>
                 </div>
               ))}
+                        </Fade>
           </div>
         </div>
       </div>
