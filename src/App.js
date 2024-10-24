@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createTheme, ThemeProvider   } from '@mui/material/styles';
 import NavBar from './compenent/NavBar/NavBar';
 import { FaWhatsapp } from 'react-icons/fa';
-import { HashRouter,  Routes } from 'react-router-dom'
-/*import Home from './component/Home/Home.js';*/
+import { HashRouter,  Routes, Route } from 'react-router-dom'
+import Home from './compenent/Home/Home.js'
 /*import NotFoundPage from './component/NotFoundPage/NotFoundPage.js';*/
 
 
@@ -27,7 +27,7 @@ const App = () => {
       <HashRouter>
       <NavBar />
       <Routes>
-      {/*<Route path="/" element={<Home />} />*/}
+      <Route path="/" element={<Home />} />
       {/*<Route path="*" element={<NotFoundPage />} />*/}
       </Routes>
       </HashRouter>
