@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createTheme, ThemeProvider   } from '@mui/material/styles';
+import NavBar from './compenent/NavBar/NavBar';
+import { FaWhatsapp } from 'react-icons/fa';
+import { HashRouter,  Routes } from 'react-router-dom'
+/*import Home from './component/Home/Home.js';*/
+/*import NotFoundPage from './component/NotFoundPage/NotFoundPage.js';*/
 
-function App() {
+
+
+
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Cairo',
+      'Tajawal',
+    ].join(','),
+  },
+});
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <HashRouter>
+      <NavBar />
+      <Routes>
+      {/*<Route path="/" element={<Home />} />*/}
+      {/*<Route path="*" element={<NotFoundPage />} />*/}
+      </Routes>
+      </HashRouter>
+      <a href="https://wa.me/966506353350" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp size={40} />
+      </a>
+    </ThemeProvider>
   );
 }
 

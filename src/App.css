@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+/* ====== CUSTOM FONTS =======*/
+@font-face {
+  font-family: "Cairo";
+  src: url('../public/fonts/Cairo/Cairo-Black.ttf');
+  font-weight: 900;
+  
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-ExtraBold.ttf');
+  font-weight: 800;
+  
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-Bold.ttf');
+  font-weight: 700;
+  
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-SemiBold.ttf');
+  font-weight: 600;
+  
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-Medium.ttf');
+  font-weight: 500;
+  
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Cairo";
+  src: url('/public/fonts/Cairo/Cairo-ExtraLight.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-Black.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url('/public/fonts/Tajawal/Tajawal-Light.ttf');
+  font-weight: 200;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ====== CUSTOM FONTS =======*/
+.whatsapp-float {
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: auto;
+  right: 15px;
+  background-color: #223b40;
+  color: #FFF;
+  border-radius: 50%;
+  z-index: 1000;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.whatsapp-float:hover {
+  color: #FFF;
 }

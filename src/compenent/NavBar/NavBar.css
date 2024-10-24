@@ -1,0 +1,88 @@
+.navbarreact {
+    background-color: #fff;
+    padding-block: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* للتأكد من بقاء النافبار فوق العناصر الأخرى */
+    border-bottom: 1px solid #223b40; /* خط سفلي اختياري */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل خفيف لإبراز navbar */
+}
+.flexspacebetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-bar {
+    font-size: 32px !important;
+    color: #223b40;
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-tex  {
+    padding: 0 !important;
+}
+.navbar-bar:hover  {
+    color: #121f3e;
+    transition: 2s;
+}
+.navbar-bar:focus {
+    color: #121f3e;
+}
+.logo {
+    height: 60px;
+    cursor: pointer;
+}
+/* NavBar.css */
+
+.list-item {
+    border-bottom: 1px solid #eee;
+}
+.css-1853w64-MuiButtonBase-root-MuiListItemButton-root {
+    transition: all 0.3s  !important;
+}
+.css-1853w64-MuiButtonBase-root-MuiListItemButton-root:hover {
+    background-color: #223b40 !important;
+    color: #ffffffce !important;
+}
+.css-1853w64-MuiButtonBase-root-MuiListItemButton-root:hover svg {
+    color: #ffffffce;
+}
+.list-item-button {
+    /* أنماط خاصة للزر */
+    font-size: 18px;
+    color: #223b40 !important;
+}
+
+.list-item-icon {
+    /* أنماط خاصة للأيقونة */
+    font-size: 24px;
+    color: #223b40 !important;
+}
+
+@media (width < 500px) {
+    .logo {
+        height: 30px;
+    }
+    .navbar-bar {
+        font-size: 24px !important;
+    }
+}
+@media (width < 500px) {
+    .list-item-button {
+        font-size: 16px;
+    
+    }
+    
+    .list-item-icon {
+        font-size: 20px;
+    }
+}
+
+.list-item-button.active {
+    background-color: #223b40 !important;
+    color: #ffffffce !important;
+  }
+  .css-1853w64-MuiButtonBase-root-MuiListItemButton-root.active svg {
+    color: #ffffffce;
+}
+  
