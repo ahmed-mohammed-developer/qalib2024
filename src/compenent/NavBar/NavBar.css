@@ -63,16 +63,23 @@
     color: #223b40 !important;
 }
 .search-form {
-    max-width: 380px;
+    max-width: 500px;
+    width: 280px;
     position: relative;
     margin-right: 20px;
+    
 }
 .search-form input {
     color: #121f3e;
-    border: 1px solid #223b40;
+    border: 1px solid snow;
     outline: none !important;
     border-radius: 5px;
     width: 100%;
+    background-color: #f3f4ef;
+    border-radius: 2.5rem;
+    font-size: 12px;
+    padding: 5px;
+
 }
 .search-form .search-button{
     position: absolute;
@@ -89,7 +96,7 @@
 }
 .search-form::placeholder{
     color: #121f3e;
-    font-size: "";
+
 }
 @media (width < 500px) {
     .logo {
@@ -98,6 +105,9 @@
     .navbar-bar {
         font-size: 24px !important;
     }
+    .search-form {
+        max-width: 200px;
+}
 }
 @media (width < 500px) {
     .list-item-button {

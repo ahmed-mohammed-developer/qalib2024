@@ -16,8 +16,13 @@ const Search = () => {
 
   const filteredItems = data.filter(item =>
     item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.description.toLowerCase().includes(searchTerm.toLowerCase())
+    item.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    item.By.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    (Array.isArray(item.type) && item.type.some(typeItem => typeItem.toLowerCase().includes(searchTerm.toLowerCase()))) ||
+    (Array.isArray(item.tech) && item.tech.some(techItem => techItem.toLowerCase().includes(searchTerm.toLowerCase())))
   );
+  
+  
 
   useEffect(() => {
     axios.get('/data.json')
