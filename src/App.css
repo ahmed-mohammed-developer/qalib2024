@@ -91,11 +91,11 @@
   bottom: 40px;
   left: auto;
   right: 15px;
-  background-color: #223b40;
-  color: #FFF;
+  background-color: #FFF;
+  color: #223b40;
   border-radius: 50%;
   z-index: 1000;
 }
 .whatsapp-float:hover {
-  color: #FFF;
+  color: #223b40;
 }
