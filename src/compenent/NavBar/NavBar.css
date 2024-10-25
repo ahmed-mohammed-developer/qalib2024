@@ -78,7 +78,7 @@
     background-color: #f3f4ef;
     border-radius: 2.5rem;
     font-size: 12px;
-    padding: 5px;
+    padding: 10px;
 
 }
 .search-form .search-button{
@@ -92,7 +92,7 @@
     border: 0 !important;
     margin-left: 10px;
     color: #223b40a3;
-    padding-top: 2px;
+    padding-top: 7px;
 }
 .search-form::placeholder{
     color: #121f3e;

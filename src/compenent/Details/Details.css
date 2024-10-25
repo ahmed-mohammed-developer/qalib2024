@@ -1,0 +1,179 @@
+.details{
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #f5f7fa, #fff);
+}
+.title-qalib {
+    margin-bottom: 10px;
+}
+.title-qalib h2 {
+    color: #2d2f31;
+    font-family: "Tajawal", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.title-qalib p {
+    cursor: pointer;
+    color: #2d2f31;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+}
+
+.details img {
+    width: 100%;
+   height: 100%;
+   max-width: 900px;
+   max-height:600px;
+   border-radius: 5px;
+   padding-bottom: 25px;
+
+}
+.text-det {
+    border: 2px solid #2d2f31;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.text-det h2 {
+    font-family: "Tajawal", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-block: 20px;
+}
+.text-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    line-height: 10px;
+
+}
+.text-point p {
+    color: #2d2f31;
+    margin-bottom: 0 !important;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+}
+.text-icon {
+    border: 2px solid #2d2f31;
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+.text-icon:hover {
+   transition-duration: 1s;
+    background-color: #2d2f31;
+    color: #fff;
+}
+.text-icon p {
+    margin-bottom: 0 !important;
+    font-family: "Cairo", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.text-icon:hover p {
+    transition-duration: 1s;
+     color: #fff;
+ }
+.text-icon i {
+    font-size: 20px;
+}
+.text-icon:hover i {
+    transition-duration: 1s;
+    background-color: #2d2f31;
+    color: #fff;
+}
+.description h3 {
+    font-family: "Tajawal", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+
+}
+.hdes {
+    margin-top: 50px;
+    font-family: "Tajawal", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.tech {
+    list-style-type: disc;
+    display: list-item;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+}
+.category-container {
+    display: flex;
+    gap: 20px; /* يمكنك تعديل المسافة حسب الحاجة */
+    flex-wrap: wrap; /* يتيح للعناصر الانتقال إلى سطر جديد */
+}
+
+.category {
+    margin: 0;
+    padding: 10px 15px; /* يمكنك تعديل الحواف حسب الحاجة */
+    border-radius: 48px; /* زوايا مستديرة اختيارية */
+    border: 1px solid #2d2f31;
+    cursor: pointer;
+    word-wrap: break-word; /* يكسر الكلمات الطويلة وينقلها إلى سطر جديد */
+    white-space: normal; /* يتيح للنص الانتقال إلى سطر جديد */
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+}
+
+  .category:hover {
+    background-color: #eeeeef  ;
+    transition-duration: 1s;
+  }
+.OtherTemplates-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #2d2f31;
+    font-family: "FFShamelFamily-SansOneBold", sans-serif;
+    margin-top: 50px;
+}
+.deatlispageicon {
+    display: flex;
+    flex-direction: column !important;
+    align-items: start;
+    margin-right: 0 !important;
+}
+@media (width < 992px) {
+    .text-det {
+        display: none;
+    }
+}
+@media (width < 298px) {
+    .title-qalib h2 {
+        font-size: 16px;
+    }
+    .title-qalib p{
+        font-size: 1rem;
+    }
+    .text-icon p {
+        font-size: 10px;
+    }
+}

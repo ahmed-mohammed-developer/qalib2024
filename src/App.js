@@ -8,6 +8,7 @@ import {  BrowserRouter as HashRouter,  Routes, Route } from 'react-router-dom'
 import Home from './compenent/Home/Home.js'
 /*import NotFoundPage from './component/NotFoundPage/NotFoundPage.js';*/
 import Search from './compenent/Search/Search.js'
+import Details from "./compenent/Details/Details.js"
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/search" element={<Search />} />
+      <Route path="/Details/:id" element={<Details />} />
       {/*<Route path="*" element={<NotFoundPage />} />*/}
       </Routes>
       </HashRouter>

@@ -125,6 +125,11 @@
     background: linear-gradient(135deg, #388c7c, #223b40);
     color: #fff;
 }
+.unstyled-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
 @media (width < 500px) {
     .home {
       padding-block: 80px;
