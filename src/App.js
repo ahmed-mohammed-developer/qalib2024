@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createTheme, ThemeProvider   } from '@mui/material/styles';
 import NavBar from './compenent/NavBar/NavBar';
 import { FaWhatsapp } from 'react-icons/fa';
-import { HashRouter,  Routes, Route } from 'react-router-dom'
+import {  BrowserRouter as HashRouter,  Routes, Route } from 'react-router-dom'
 import Home from './compenent/Home/Home.js'
 /*import NotFoundPage from './component/NotFoundPage/NotFoundPage.js';*/
-
+import Search from './compenent/Search/Search.js'
 
 
 
@@ -28,6 +28,7 @@ const App = () => {
       <NavBar />
       <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/search" element={<Search />} />
       {/*<Route path="*" element={<NotFoundPage />} />*/}
       </Routes>
       </HashRouter>

@@ -22,12 +22,34 @@ import ImportContactsOutlinedIcon from '@mui/icons-material/ImportContactsOutlin
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import { NavLink  } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 const NavBar = () => {
     const [state, setState] = useState({
         right: false,
     });
+
+    //Search Logic
+        
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    navigate(`/search?query=${searchTerm}`);
+    setSearchTerm('')
+  }
+    //Search Logic
+
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -44,8 +66,6 @@ const NavBar = () => {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List component="nav">
-                
-        
             <li className="list-item">
                 <ListItem disablePadding>
                     <ListItemButton
@@ -167,6 +187,19 @@ const NavBar = () => {
             <CssBaseline />
             <Container fixed className='flexspacebetween'>
             <img className='logo' src={`${process.env.PUBLIC_URL}/images/logo white.png`} alt="قالب" />
+            <div className='dNavbar'>
+            <form className="search-form" onSubmit={handleSearchSubmit}>
+        <input
+          type="text"
+          placeholder="ابحث هنا..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+          className="search-input"
+        />
+        <button type="submit" className="search-button">
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
+                </form>
                 <div>
                     <Button onClick={toggleDrawer('right', true)}>
                         <HorizontalSplitOutlinedIcon className='navbar-bar' />
@@ -179,6 +212,7 @@ const NavBar = () => {
                         {list('right')}
                     </Drawer>
                 </div>
+            </div>
             </Container>
         </div>
     );

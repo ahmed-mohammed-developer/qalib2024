@@ -1,12 +1,23 @@
-import "./home.css";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
-const Home = () => {
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
+
+const Search = () => {
   const [data, setData] = useState([]);
+  const query = useQuery();
+  const searchTerm = query.get('query');
+
+  const filteredItems = data.filter(item =>
+    item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    item.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   useEffect(() => {
     axios.get('/data.json')
@@ -16,23 +27,17 @@ const Home = () => {
       })
       .catch(error => {
         console.log('Error fetching data:', error);
-        // يمكنك هنا إضافة منطق لإظهار رسالة للمستخدم
       });
   }, []);
-
-  const filteredItems = data; // لم يعد هناك عملية فلترة
 
   return (
     <div className="home">
       <div className="container">
         <div className="row">
-          <div className="section-title">
-            <h2>جميع القوالب</h2>
-          </div>
           <div className="row rowhome">
             {filteredItems
-              .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
-              .map((item, index) => ( // استخدام .map() مباشرة بعد الترتيب
+              .sort((a, b) => new Date(b.date) - new Date(a.date))
+              .map((item, index) => (
                 <div className="col-lg-4 col-md-6 col-sm-12" key={item.id || index}>
                   <div className="card cardlastprojict">
                     <a href={item.view} target="_blank" rel="noopener noreferrer">
@@ -43,12 +48,8 @@ const Home = () => {
                       </div>
                     </a>
                     <div className="btnHome">
-                      <a href={item.view} className="btn btn-sleek" target="_blank" rel="noopener noreferrer">
-                        مشاهدة<FontAwesomeIcon icon={faEye} className="coloricon" />
-                      </a>
-                      <a href={item.download} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginRight: "10px" }}>
-                        تحميل<FontAwesomeIcon icon={faGithub} className="coloricon" />
-                      </a>
+                      <a href={item.view} className="btn btn-sleek" target="_blank" rel="noopener noreferrer">مشاهدة<FontAwesomeIcon icon={faEye} className="coloricon" /></a>
+                      <a href={item.download} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginRight: "10px" }}>تحميل<FontAwesomeIcon icon={faGithub} className="coloricon" /></a>
                     </div>
                   </div>
                 </div>
@@ -58,6 +59,6 @@ const Home = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Home;
+export default Search;
