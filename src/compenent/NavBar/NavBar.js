@@ -12,19 +12,23 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HorizontalSplitOutlinedIcon from '@mui/icons-material/HorizontalSplitOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
-import PhotoCameraBackOutlinedIcon from '@mui/icons-material/PhotoCameraBackOutlined';
-import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
-import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
-import AutoFixHighOutlinedIcon from '@mui/icons-material/AutoFixHighOutlined';
-import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined';
-import ImportContactsOutlinedIcon from '@mui/icons-material/ImportContactsOutlined';
-import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
-import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
+import FlightLandIcon from '@mui/icons-material/FlightLand';
+
 import { NavLink  } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import CodeOffIcon from '@mui/icons-material/CodeOff';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
+
+
+
+
 
 
 
@@ -74,7 +78,7 @@ const NavBar = () => {
                     to="/"
                     sx={{ display: 'flex', justifyContent: 'space-between' }}
                         >
-                    <ListItemText primary="الصفحة الرئسية" sx={{ textAlign: 'right' }} />
+                    <ListItemText primary="جميع القوالب" sx={{ textAlign: 'right' }} />
                     <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
                         <HomeOutlinedIcon />
                     </ListItemIcon>
@@ -86,95 +90,105 @@ const NavBar = () => {
                     <ListItemButton
                     className="list-item-button"
                     component={NavLink}
-                    to="/resume"
+                    to="/Landingpage"
                     sx={{ display: 'flex', justifyContent: 'space-between' }}
                         >
-                    <ListItemText primary="السيرة الذاتية" sx={{ textAlign: 'right' }} />
+                    <ListItemText primary="صفحات الهبوط" sx={{ textAlign: 'right' }} />
                     <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                        <DescriptionOutlinedIcon />
+                        <FlightLandIcon />
                     </ListItemIcon>
                     </ListItemButton>
                 </ListItem>
                 </li>
                 <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="قالب الأعمال" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <PhotoCameraBackOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Personalwebsitepage"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="موقع شخصي" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                        <PersonOutlineIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
                 <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between'  }} disabled>
-                            <ListItemText primary="المهارات التقنية" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <ConstructionOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Companypage"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="موقع لشركة" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                        <ApartmentIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
                 <li className="list-item">
-                    <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#general-skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="المهارات الأخرى" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <EngineeringOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/HtmlCsspage"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="Html & Css" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                        <CodeOffIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
                 <li className="list-item">
-                    <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#template" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="المدونة التقنية" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <RateReviewOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Reactpage"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="React" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                    <FontAwesomeIcon icon={faReact} />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
                 <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="المدونة العامة" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <AutoFixHighOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Jspage"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="JavaScript" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                    <FontAwesomeIcon icon={faJs} />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
                 <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="المؤلفات" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <ImportContactsOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
-                </li>
-                <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="المكتبة" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <ClassOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
-                </li>
-                <li className="list-item">
-                  <ListItem disablePadding>
-                        <ListItemButton className="list-item-button" component="a" href="#skills" sx={{ display: 'flex', justifyContent: 'space-between' }} disabled>
-                            <ListItemText primary="تواصل معي" sx={{ textAlign: 'right' }} />
-                            <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
-                                <CallOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemButton>
-                    </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Eshoppage"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="متجر إلكتروني" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                        <ShoppingBasketIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
                 </li>
             </List>
         </Box>
@@ -186,7 +200,9 @@ const NavBar = () => {
         <div className='navbarreact' id='navbarid'>
             <CssBaseline />
             <Container fixed className='flexspacebetween'>
+            <Link to={`/`}>
             <img className='logo' src={`${process.env.PUBLIC_URL}/images/logo white.png`} alt="قالب" />
+            </Link>
             <div className='dNavbar'>
             <form className="search-form" onSubmit={handleSearchSubmit}>
         <input

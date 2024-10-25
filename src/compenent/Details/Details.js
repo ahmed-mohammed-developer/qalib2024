@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import CheckIcon from '@mui/icons-material/Check';
+import Othertemplates from './Othertemplates/Othertemplates';
 
 const Details = () => {
   const [data, setData] = useState(null);
@@ -38,14 +39,14 @@ const Details = () => {
 
   useEffect(() => {
     if (data && data.title) {
-      document.title = data.title;
+      document.title = `قالب | ${data.title}`;
     }
   }, [data]);
 
   return (
     <HelmetProvider>
       <Helmet>
-        <title>{data ? data.title : ''}</title>
+        <title>قالب |{data ? data.title : ''}</title>
       </Helmet>
       <div className="details">
         <div className="container">
@@ -80,10 +81,10 @@ const Details = () => {
                     </div>
                   </div>
                   <div className="btnHome deatlispageicon">
-                      <a href={data.view} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", width: "100%" }}>
+                      <a href={data.view} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", width: "90%" }}>
                         مشاهدة<FontAwesomeIcon icon={faEye} className="coloricon " />
                       </a>
-                      <a href={data.download} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "10px", marginBottom: "20px", width: "100%" }}>
+                      <a href={data.download} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "10px", marginBottom: "20px", width: "90%" }}>
                         تحميل<FontAwesomeIcon icon={faGithub} className="coloricon "/>
                       </a>
                     </div>
@@ -111,6 +112,9 @@ const Details = () => {
             ) : (
               <p>لم يتم العثور على البيانات</p>
             )}
+          </div>
+          <div className='row'>
+            <Othertemplates />
           </div>
         </div>
       </div>

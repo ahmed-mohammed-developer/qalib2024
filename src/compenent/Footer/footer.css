@@ -1,0 +1,54 @@
+.footer {
+    padding-block: 50px;
+    background-color: #223b40;
+    padding-inline: 20px;
+}
+.main-footer {
+   
+
+}
+.imgSection a {
+    text-decoration: none;
+}
+.imgSection h2{
+    color: #ffffffce;
+    font-family: "Tajawal", sans-serif;
+    transition: all 1s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.imgSection h2:hover {
+    color: #fff;
+}
+.deatelsSection h3 {
+    font-family: "Tajawal", sans-serif;
+   font-size: 18px;
+   color: #fff;
+   font-weight: 500;
+   line-height: 19px;
+   padding-bottom: 25px;
+}
+.deatelsSection p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffffce;
+    transition: all 1s;
+}
+.deatelsSection p:hover {
+    color: #fff;
+}
+.deatelsSection a {
+    text-decoration: none;
+}
+.footericon {
+    font-size: 17px;
+    line-height: 21px;
+    color: #ffffffce;
+    padding-inline: 10px;
+}
+.marginBottom{
+    margin-bottom: 50px;
+}
+ .marginb{
+    margin-bottom: 20px;
+}

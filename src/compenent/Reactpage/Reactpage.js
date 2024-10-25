@@ -1,4 +1,3 @@
-import "./home.css";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +7,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
-const Home = () => {
+const Reactpage = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // تمرير الصفحة لأعلى عند تحميل المكون
   }, []);
@@ -31,16 +30,17 @@ const Home = () => {
   return (
     <HelmetProvider>
     <Helmet>
-      <title>قالب | جميع القوالب</title>
+      <title>قالب | React</title>
     </Helmet>
     <div className="home">
       <div className="container">
         <div className="row">
           <div className="section-title">
-            <h2>جميع القوالب</h2>
+            <h2>قالب | React</h2>
           </div>
           <div className="row rowhome">
             {filteredItems
+            .filter(item => item.type.includes("React")) // تصفية العناصر
               .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
               .map((item, index) => ( // استخدام .map() مباشرة بعد الترتيب
                 <div className="col-lg-4 col-md-6 col-sm-12" key={item.id || index}>
@@ -73,4 +73,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Reactpage;

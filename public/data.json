@@ -9,7 +9,7 @@
        "ByUrl": "",
        "description": "تبويبات المحتوى هي تقنية تستخدم لإنشاء تبويبات (Tabs) في صفحات الويب باستخدام HTML و CSS فقط، دون الحاجة إلى JavaScript. هذه التبويبات تتيح للمستخدمين التنقل بين محتويات مختلفة داخل نفس الصفحة بطريقة سلسة وجذابة.",
        "tech": ["Html", "CSS"],
-       "type": ["أخرى"],
+       "type": ["أخرى","Html", "CSS"],
        "date": "2022-08-14T09:00:00Z"
       },
       { "id": 2,
@@ -21,7 +21,7 @@
       "By": "أحمد زعــــكان",
       "ByUrl": "",
       "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-      "type": ["أخرى", "شريط التنقل"],
+      "type": ["أخرى", "شريط التنقل", "JavaScript"],
       "date": "2024-08-13T09:00:00Z"
      },
      { "id": 3,
@@ -33,7 +33,7 @@
      "By": "أحمد زعــــكان",
      "ByUrl": "",
      "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-     "type": ["أخرى"],
+     "type": ["أخرى", "JavaScript"],
      "date": "2023-08-14T09:00:00Z"
     },
     { "id": 4,
@@ -45,7 +45,7 @@
     "By": "أحمد زعــــكان",
     "ByUrl": "",
     "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-    "type": ["أخرى"],
+    "type": ["أخرى", "JavaScript"],
     "date": "2023-08-14T09:00:00Z"
    },
    { "id": 5,
@@ -57,7 +57,7 @@
    "By": "أحمد زعــــكان",
    "ByUrl": "",
    "tech": ["Html", "CSS", "JavaScript", "Responsive"],
-   "type": ["أخرى"],
+   "type": ["أخرى", "JavaScript"],
    "date": "2023-08-14T09:00:00Z"
   },
   { "id": 6,
@@ -69,7 +69,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Html", "JavaScript"],
-  "type": ["أخرى"],
+  "type": ["أخرى", "JavaScript"],
   "date": "2023-08-14T09:00:00Z"
  },
  { "id": 7,
@@ -81,7 +81,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript"],
-  "type": ["أخرى"],
+  "type": ["أخرى", "JavaScript"],
   "date": "2023-08-14T09:00:00Z"
  },
  { "id": 8,
@@ -93,7 +93,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": ["صفحة هبوط","موقع شخصي"],
+  "type": ["صفحة هبوط","موقع شخصي", "JavaScript"],
   "date": "2024-08-14T09:00:00Z"
  },
  { "id": 9,
@@ -105,7 +105,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive", "ExchangeRate-API"],
-  "type": ["أخرى"],
+  "type": ["أخرى", "JavaScript"],
   "date": "2024-08-11T09:00:00Z"
  },
  { "id": 10,
@@ -117,7 +117,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": ["أخرى"],
+  "type": ["أخرى", "JavaScript"],
   "date": "2024-08-12T09:00:00Z"
  },
  { "id": 11,
@@ -129,7 +129,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Responsive", "Html","CSS", "JavaScript", "JSON"],
-  "type": ["أخرى"],
+  "type": ["أخرى", "JavaScript"],
   "date": "2024-08-12T09:00:00Z"
  },
  { "id": 12,
@@ -141,7 +141,7 @@
   "By": "أحمد زعــــكان",
   "ByUrl": "",
   "tech": ["Html","CSS", "JavaScript", "Responsive"],
-  "type": ["صفحة هبوط"],
+  "type": ["صفحة هبوط", "JavaScript"],
   "date": "2024-08-12T09:00:00Z"
  },
  { "id": 13,
@@ -165,7 +165,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "",
 "tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
-"type": "Landing page",
+"type": ["صفحة هبوط", "Html"],
 "date": "2024-08-12T10:00:00Z"
 },
 { "id": 15,
@@ -177,7 +177,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "",
 "tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
-"type": ["صفحة هبوط", "موقع شخصي"],
+"type": ["صفحة هبوط", "موقع شخصي","Html"],
 "date": "2024-08-12T10:00:00Z"
 },
 { "id": 16,
@@ -189,7 +189,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "",
 "tech": ["Html","CSS", "Google fonts", "Font Awesome library", "Responsive"],
-"type": ["صفحة هبوط","موقع شخصي"],
+"type": ["صفحة هبوط","موقع شخصي","Html"],
 "date": "2024-08-12T10:00:00Z"
 },
 { "id": 17,
@@ -201,7 +201,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Google fonts", "Font Awesome library", "Responsive"],
-"type": ["صفحة هبوط","موقع شخصي"],
+"type": ["صفحة هبوط","موقع شخصي", "JavaScript"],
 "date": "2024-08-15T10:00:00Z"
 },
 { "id": 18,
@@ -261,7 +261,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "",
 "tech": ["Html","CSS", "JavaScript", "Google fonts", "Font Awesome library", "Responsive"],
-"type": ["لوحة تحكم","أخرى"],
+"type": ["لوحة تحكم","أخرى","Html"],
 "date": "2024-08-14T10:00:00Z"
 },
 { "id": 23,
@@ -333,7 +333,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "https://ahmed-mohammed-developer.github.io/AhmedMohammed/",
 "tech": ["Html","CSS", "Bootstrap library", "Google fonts",  "Responsive", "React", "Vite", "JSON", "React-Icons", "React-Slick", "Slick-Carousel", "Font Awesome"],
-"type": ["موقع شخصي","صفحة هبوط"],
+"type": ["موقع شخصي","صفحة هبوط","React"],
 "date": "2024-09-01T10:10:00Z"
 },
 { "id": 29,
@@ -345,7 +345,7 @@
 "By": "أحمد زعــــكان",
 "ByUrl": "https://ahmed-mohammed-developer.github.io/AhmedMohammed/",
 "tech": ["Html","CSS", "Bootstrap library", "Google fonts",  "Responsive", "React", "Vite", "JSON", "React-Icons", "React-Slick", "Slick-Carousel", "Font Awesome", "React-helmet-async", "React-scroll-to-top"],
-"type": ["أخرى","معرض أعمال"],
+"type": ["أخرى","معرض أعمال" ,"React"],
 "date": "2024-09-02T10:10:00Z"
 },
 { "id": 30,
