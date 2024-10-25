@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -24,6 +26,10 @@ const Home = () => {
   const filteredItems = data; // لم يعد هناك عملية فلترة
 
   return (
+    <HelmetProvider>
+    <Helmet>
+      <title>قالب | جميع القوالب</title>
+    </Helmet>
     <div className="home">
       <div className="container">
         <div className="row">
@@ -60,6 +66,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </HelmetProvider>
   );
 }
 

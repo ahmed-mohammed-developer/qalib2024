@@ -36,10 +36,16 @@ const Details = () => {
     fetchDetails();
   }, [fetchDetails]);
 
+  useEffect(() => {
+    if (data && data.title) {
+      document.title = data.title;
+    }
+  }, [data]);
+
   return (
     <HelmetProvider>
       <Helmet>
-        <title>تفاصيل القالب</title>
+        <title>{data ? data.title : ''}</title>
       </Helmet>
       <div className="details">
         <div className="container">
