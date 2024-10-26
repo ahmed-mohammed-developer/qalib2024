@@ -6,6 +6,9 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 const Othertemplates = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // تمرير الصفحة لأعلى عند تحميل المكون
+  }, []);
   const [data, setData] = useState([]);
 
   useEffect(() => {
