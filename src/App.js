@@ -16,6 +16,7 @@ import HtmlCsspage from './compenent/HtmlCsspage/HtmlCsspage.js'
 import Jspage from './compenent/Jspage/Jspage.js'
 import Reactpage from './compenent/Reactpage/Reactpage.js';
 import Footer from './compenent/Footer/Footer.js'
+import Other from './compenent/Other/Other.js';
 
 const theme = createTheme({
   typography: {
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/HtmlCsspage" element={<HtmlCsspage />} />
           <Route path="/Jspage" element={<Jspage />} />
           <Route path="/Reactpage" element={<Reactpage />} />
+          <Route path="/Other" element={<Other />} />
           {/*<Route path="*" element={<NotFoundPage />} />*/}
         </Routes>
         <Footer />

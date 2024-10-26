@@ -13,7 +13,6 @@ import ListItemText from '@mui/material/ListItemText';
 import HorizontalSplitOutlinedIcon from '@mui/icons-material/HorizontalSplitOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
-
 import { NavLink  } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -25,6 +24,9 @@ import CodeOffIcon from '@mui/icons-material/CodeOff';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faJs } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
+import { faHouseFlag } from '@fortawesome/free-solid-svg-icons';
+
+
 
 
 
@@ -186,6 +188,21 @@ const NavBar = () => {
                     <ListItemText primary="متجر إلكتروني" sx={{ textAlign: 'right' }} />
                     <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
                         <ShoppingBasketIcon />
+                    </ListItemIcon>
+                    </ListItemButton>
+                </ListItem>
+                </li>
+                <li className="list-item">
+                <ListItem disablePadding>
+                    <ListItemButton
+                    className="list-item-button"
+                    component={NavLink}
+                    to="/Other"
+                    sx={{ display: 'flex', justifyContent: 'space-between' }}
+                        >
+                    <ListItemText primary="قوالب أخرى" sx={{ textAlign: 'right' }} />
+                    <ListItemIcon className="list-item-icon" sx={{ minWidth: 'auto', mr: 2 }}>
+                    <FontAwesomeIcon icon={faHouseFlag} />
                     </ListItemIcon>
                     </ListItemButton>
                 </ListItem>
