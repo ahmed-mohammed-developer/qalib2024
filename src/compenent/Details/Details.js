@@ -14,6 +14,7 @@ const Details = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // تمرير الصفحة لأعلى عند تحميل المكون
   }, []);
+
   const [data, setData] = useState(null);
   const [tech, setTech] = useState([]);
   const [type, setType] = useState([]);
@@ -49,7 +50,7 @@ const Details = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>قالب |{data ? data.title : ''}</title>
+        <title>قالب | {data ? data.title : ''}</title>
       </Helmet>
       <div className="details">
         <div className="container">

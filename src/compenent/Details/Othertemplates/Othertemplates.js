@@ -6,9 +6,6 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 const Othertemplates = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0); // تمرير الصفحة لأعلى عند تحميل المكون
-  }, []);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -26,6 +23,10 @@ const Othertemplates = () => {
   // تحديد فقط 3 عناصر عشوائية
   const filteredItems = data.sort(() => Math.random() - 0.5).slice(0, 3);
 
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="home" style={{paddingTop: "10px"}}>
       <div className="container">
@@ -34,10 +35,10 @@ const Othertemplates = () => {
             {filteredItems.map((item, index) => (
                 <div className="col-lg-4 col-md-6 col-sm-12" key={item.id || index}>
                   <div className="card cardlastprojict">
-                    <Link to={`/Details/${item.id}`}>
+                    <Link to={`/Details/${item.id}`} onClick={handleLinkClick}>
                       <img className="card-img-top" src={item.img} alt={item.title} />
                     </Link>
-                    <Link to={`/Details/${item.id}`}>
+                    <Link to={`/Details/${item.id}`} onClick={handleLinkClick}>
                       <div className="card-body latestworks-body">
                         <h5 className="card-title latestworks-h5">{item.title}</h5>
                         <p className="card-text latestworks-p">{item.description}</p>
