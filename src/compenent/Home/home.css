@@ -1,6 +1,6 @@
 .home {
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     background: linear-gradient(135deg, #f5f7fa, #fff);
 
 }
@@ -132,7 +132,9 @@
   
 @media (width < 500px) {
     .home {
-      padding-block: 80px;
+      padding-top: 80px;
+      padding-bottom: 15px;
+
       /*background-color: #f5f7fa;*/
   }
 }
