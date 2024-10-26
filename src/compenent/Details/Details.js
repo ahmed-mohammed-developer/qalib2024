@@ -11,6 +11,9 @@ import CheckIcon from '@mui/icons-material/Check';
 import Othertemplates from './Othertemplates/Othertemplates';
 
 const Details = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // تمرير الصفحة لأعلى عند تحميل المكون
+  }, []);
   const [data, setData] = useState(null);
   const [tech, setTech] = useState([]);
   const [type, setType] = useState([]);
