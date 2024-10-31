@@ -1,0 +1,5 @@
+@media (width < 500px) {
+    .col-lg-4{
+        padding-inline: 2px !important;
+    }
+}

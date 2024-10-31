@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import './othertemplates.css'
 
 const Othertemplates = () => {
   const [data, setData] = useState([]);
@@ -28,7 +29,7 @@ const Othertemplates = () => {
   };
 
   return (
-    <div className="home" style={{paddingTop: "10px"}}>
+    <div className="home" style={{paddingTop: "10px", paddingInline: "0px"}}>
       <div className="container">
         <div className="row">
           <div className="row rowhome">
