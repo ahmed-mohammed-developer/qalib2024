@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Fade from 'react-reveal/Fade';
-
-
-
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Card from '../Card/Card';
 
@@ -26,14 +22,13 @@ const Eshoppage = () => {
       });
   }, []);
 
-  
-
-  const filteredItems = data
+  const Cards = data
     .filter(item => item.type.includes("متجر إلكتروني")) // تصفية العناصر
-    .sort((a, b) => new Date(b.date) - new Date(a.date)); // ترتيب العناصر بترتيب تنازلي
-  const Cards = filteredItems.map((item, index) => (
-    <Card key={index} item={item} />
-  ));
+    .sort((a, b) => new Date(b.date) - new Date(a.date)) // ترتيب العناصر بترتيب تنازلي
+    .map((item, index) => (
+      <Card key={index} item={item} />
+    ));
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -45,11 +40,9 @@ const Eshoppage = () => {
             <div className="section-title">
               <h2>قالب | متجر إلكتروني</h2>
             </div>
-            <Fade top>
             <div className="row rowhome">
-             {Cards}
+              {Cards}
             </div>
-            </Fade>
           </div>
         </div>
       </div>
@@ -58,3 +51,7 @@ const Eshoppage = () => {
 };
 
 export default Eshoppage;
+
+
+
+
