@@ -167,6 +167,11 @@
         display: none;
     }
 }
+@media (width < 500px) {
+    .col-lg-8{
+        padding-inline: 2px !important;
+    }
+}
 @media (width < 298px) {
     .title-qalib h2 {
         font-size: 16px;
