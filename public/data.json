@@ -479,6 +479,18 @@
 "tech": ["Html",  "React"],
 "type": ["أخرى","React", "useContext ", "createContext"],
 "date": "2024-10-06T10:10:00Z"
+},
+{ "id": 41,
+"title": "تطبيق قائمة المهام", 
+"description": "تطبيق المهام هو أداة لتنظيم وإدارة المهام اليومية. يتيح للمستخدمين إضافة المهام، تعديلها، حذفها، وتصنيفها إلى مهام منجزة وغير منجزة.", 
+"img": "./images/todolist.png",
+"view": "https://ahmed-zaakan.netlify.app/#/Notes",
+"download": "https://github.com/ahmed-mohammed-developer/note2024",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Material-UI", "React Context", "CSS","Uuid"],
+"type": ["أخرى","React", "useContext ", "createContext", "Material-UI"],
+"date": "2024-11-01T10:10:00Z"
 }
     ]
   }
