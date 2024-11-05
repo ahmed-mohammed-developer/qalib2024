@@ -1,7 +1,7 @@
 .details{
     padding-top: 120px;
     background: linear-gradient(135deg, #f5f7fa, #fff);
-    margin-right: 10px;
+    padding-inline: 15px;
 }
 .title-qalib {
     margin-bottom: 10px;
@@ -171,8 +171,8 @@
     .col-lg-8{
         padding-inline: 0px !important;
     }
-    .details img {
-        margin-left: 10px;
+    .details{
+        padding-top: 100px;
     }
 }
 @media (width < 298px) {

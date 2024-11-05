@@ -85,10 +85,10 @@ const Details = () => {
                     </div>
                   </div>
                   <div className="btnHome deatlispageicon">
-                      <a href={data.view} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", width: "90%" }}>
+                      <a href={data.view} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "5px", width: "100%" }}>
                         مشاهدة<FontAwesomeIcon icon={faEye} className="coloricon " />
                       </a>
-                      <a href={data.download} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "10px", marginBottom: "20px", width: "90%" }}>
+                      <a href={data.download} className="btn btn-sleek" target="_blank" rel="noopener noreferrer" style={{ marginTop: "10px", marginBottom: "20px", width: "100%" }}>
                         تحميل<FontAwesomeIcon icon={faGithub} className="coloricon "/>
                       </a>
                     </div>

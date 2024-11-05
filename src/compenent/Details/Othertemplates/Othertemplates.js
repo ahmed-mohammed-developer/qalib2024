@@ -30,7 +30,7 @@ const Othertemplates = () => {
 
   return (
     <div className="home" style={{paddingTop: "10px", paddingInline: "0px"}}>
-      <div className="container">
+      <div className="container" style={{paddingInline: "0px"}}>
         <div className="row">
           <div className="row rowhome">
             {filteredItems.map((item, index) => (
