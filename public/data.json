@@ -491,6 +491,18 @@
 "tech": ["Html",  "React", "Material-UI", "React Context", "CSS","Uuid"],
 "type": ["أخرى","React", "useContext ", "createContext", "Material-UI"],
 "date": "2024-11-01T10:10:00Z"
+},
+{ "id": 42,
+"title": "تطبيق بسيط على useState", 
+"description": "تطبيق بسيط لإستخدام الHook useState مع شرح الأكواد بالعربي عن طريق كتابة تعليقات في الكود", 
+"img": "./images/usestate1.png",
+"view": "https://qalib-ahmed-zaakan.netlify.app/#/Details/42",
+"download": "https://github.com/ahmed-mohammed-developer/signatureApp",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React", "useState"],
+"date": "2024-11-02T10:10:00Z"
 }
     ]
   }
