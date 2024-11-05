@@ -503,6 +503,18 @@
 "tech": ["Html",  "React", "Bootstrap library"],
 "type": ["أخرى","React", "useState"],
 "date": "2024-11-02T10:10:00Z"
+},
+{ "id": 43,
+"title": "تطبيق توليد لون عشواىي", 
+"description": "تطبيق لتوليد لون عشوائي لجسم الصفحة والأزرار بإستخام React", 
+"img": "./images/RandomColor.png",
+"view": "https://ahmedmohammeddeveloper.blogspot.com/2024/11/react.html",
+"download": "https://github.com/ahmed-mohammed-developer/RandomColor",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-03T10:10:00Z"
 }
     ]
   }
