@@ -515,6 +515,30 @@
 "tech": ["Html",  "React", "Bootstrap library"],
 "type": ["أخرى","React"],
 "date": "2024-11-03T10:10:00Z"
+},
+{ "id": 44,
+"title": "تطبيق React بسيط يعرض صورة يمكن للمستخدم التفاعل معها", 
+"description": "هذا المشروع هو تطبيق React بسيط يعرض صورة يمكن للمستخدم التفاعل معها من خلال الإعجاب بها. عند النقر المزدوج على الصورة أو الضغط على أيقونة القلب، يتم تحديث حالة الإعجاب وعدد الإعجابات المعروضة.", 
+"img": "./images/likeimg.png",
+"view": "",
+"download": "https://github.com/ahmed-mohammed-developer/Likeimg",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-04T10:10:00Z"
+},
+{ "id": 45,
+"title": "تطبيق React يقوم بجلب البيانات من API", 
+"description": "هذا المشروع هو تطبيق React يقوم بجلب البيانات من API وعرضها بناءً على نوع البيانات المطلوبة (منشورات، مستخدمين، تعليقات) عند النقر على الأزرار المحددة، مع عرض البيانات في شكل بطاقات.", 
+"img": "./images/tesm.png",
+"view": "",
+"download": "https://github.com/ahmed-mohammed-developer/testimonials",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-03T10:10:00Z"
 }
     ]
   }

@@ -7,8 +7,9 @@ import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 
 const Card = ({ item, index }) => {
+  
   return (
-    <Fade top>
+    <Fade bottom>
       <div className="col-lg-4 col-md-6 col-sm-12">
         <div className="card cardlastprojict" key={item.id || index}>
           <Link to={`/Details/${item.id}`}>
