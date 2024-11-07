@@ -539,6 +539,30 @@
 "tech": ["Html",  "React", "Bootstrap library"],
 "type": ["أخرى","React"],
 "date": "2024-11-03T10:10:00Z"
+},
+{ "id": 46,
+"title": " تطبيق React يعرض رسائل تنبيهية مع أزرار لإغلاقها أو إخفائها .", 
+"description": "هذا المشروع هو تطبيق React يعرض رسائل تنبيهية مع أزرار لإغلاقها أو إخفائها تلقائيًا بعد فترة زمنية محددة. التنبيهات يمكن أن تكون بأنواع وألوان مختلفة وفقًا للنوع المحدد (primary, secondary, success).", 
+"img": "./images/alertexample.png",
+"view": "https://ahmedmohammeddeveloper.blogspot.com/2024/11/react_7.html",
+"download": "https://github.com/ahmed-mohammed-developer/alertExample",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-05T10:10:00Z"
+},
+{ "id": 47,
+"title": "تطبيق بسيط تتيح للمستخدمين زيادة أو تقليل درجة الحرارة", 
+"description": "هذا المشروع يعرض كيفية إنشاء تطبيق بسيط وديناميكي باستخدام React. التطبيق يوفر واجهة مستخدم تفاعلية تتيح للمستخدمين زيادة أو تقليل درجة الحرارة، مع تغيير لون الخلفية لتعكس التغييرات. يعد هذا المشروع مثالًا رائعًا للمبتدئين الذين يرغبون في تعلم React وبناء تطبيقات تفاعلية.", 
+"img": "./images/temper.png",
+"view": "https://ahmedmohammeddeveloper.blogspot.com/2024/11/react_45.html",
+"download": "https://github.com/ahmed-mohammed-developer/Tempreatureexample",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-05T10:10:00Z"
 }
     ]
   }
