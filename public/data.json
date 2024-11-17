@@ -563,6 +563,18 @@
 "tech": ["Html",  "React", "Bootstrap library"],
 "type": ["أخرى","React"],
 "date": "2024-11-05T10:10:00Z"
+},
+{ "id": 48,
+"title": "تطبيق React يسمح للمستخدم بتغيير الثيم بين الوضع الليلي والفاتح", 
+"description": "هذا المشروع هو تطبيق React يسمح للمستخدم بتغيير الثيم بين الوضع الليلي والفاتح. يتكون المشروع من مكونات رئيسية مثل App, DarkThem, و Blog. يتم استخدام سياق React (Context) لتخزين وإدارة حالة الثيم وتوفيرها للمكونات الفرعية. يتيح للمستخدمين تغيير الثيم بسهولة عبر زر موجود في مكون Blog.", 
+"img": "./images/Dark.png",
+"view": "https://ahmed-mohammed-developer.github.io/DarkThemOnline/",
+"download": "https://github.com/ahmed-mohammed-developer/DarkThemOnline",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-06T10:10:00Z"
 }
     ]
   }
