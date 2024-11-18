@@ -575,6 +575,18 @@
 "tech": ["Html",  "React", "Bootstrap library"],
 "type": ["أخرى","React"],
 "date": "2024-11-06T10:10:00Z"
+},
+{ "id": 49,
+"title": "تطبيق فتح القفل بالسحب", 
+"description": "مكون SlideToUnlock: يتيح هذا المكون قفل وفتح الشاشة باستخدام منزلق. عند سحب المنزلق إلى النهاية، يتم فتح الشاشة وعرض أيقونة القفل المفتوح.\nاستخدام الـ useEffect: يستخدم المشروع هوك useEffect لمراقبة قيمة المنزلق (lockSliderValue). عند الوصول إلى 100، يتم تحديث حالة واجهة المستخدم لعرض الشاشة المفتوحة.\nتحديث واجهة المستخدم: يتغير نص واجهة المستخدم ولونها عند قفل أو فتح الشاشة، مما يوفر تجربة تفاعلية للمستخدم.\nإعادة تعيين المنزلق: عند النقر على أيقونة القفل المفتوح، يتم إعادة تعيين المنزلق وإعادة واجهة المستخدم إلى وضعها الافتراضي.\nاستخدام الـ useState: يتم استخدام هوك useState لإدارة حالة المنزلق وواجهة المستخدم، مما يتيح تغييرات ديناميكية بناءً على تفاعلات المستخدم.",
+"img": "./images/lockScreen.png",
+"view": "https://ahmed-mohammed-developer.github.io/SlideToUnlock/",
+"download": "https://github.com/ahmed-mohammed-developer/SlideToUnlock",
+"By": "أحمد زعــــكان",
+"ByUrl": "https://ahmed-zaakan.netlify.app/",
+"tech": ["Html",  "React", "Bootstrap library"],
+"type": ["أخرى","React"],
+"date": "2024-11-07T10:10:00Z"
 }
     ]
   }
